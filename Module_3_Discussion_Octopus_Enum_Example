@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    var octopusExample = new Octopus("Delta", 22, octopusSize.medium);
+    Console.WriteLine("The octopuses name is " + octopusExample.Name + ", the octopus is " + octopusExample.Age +  " years old, and the octopus has " + octopusExample.Legs + " legs.");  
+  }
+}
+public enum octopusSize {small = 2, medium = 4, large = 8}
+
+class Octopus
+{
+  public readonly string Name;
+  public readonly int Legs = 8;
+  public readonly int Age = 21;
+  
+  public Octopus (string name, int age, octopusSize numLeg)
+  {
+    Name = name;
+    Age = age;
+    Legs = (int)numLeg;
+  }
+}
