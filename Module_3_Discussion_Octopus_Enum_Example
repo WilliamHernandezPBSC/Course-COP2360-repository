@@ -5,7 +5,7 @@ class Program
   static void Main(string[] args)
   {
     var octopusExample = new Octopus("Delta", 22, octopusSize.medium);
-    Console.WriteLine("The octopuses name is " + octopusExample.Name + ", the octopus is " + octopusExample.Age +  " years old, and the octopus has " + octopusExample.Legs + " legs.");  
+    Console.WriteLine("The octopus's name is " + octopusExample.Name + ", the octopus is " + octopusExample.Age +  " years old, and the octopus has " + octopusExample.Legs + " legs.");  
   }
 }
 public enum octopusSize {small = 2, medium = 4, large = 8}
